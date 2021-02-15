@@ -33,9 +33,10 @@ Number of Plays (num_plays)
 : The number of plays that occured on the drive
 
 Reduced Result (reduced_result)
-: The response varible in the model, in other words this is the result we are hoping to predict. The result of the drive, simplified to any of these four categories: Touchdown (TD), Field Goal (FG), Turnover (TO), Non-Score (NON_SCORE). 
+: The response variable in the model, in other words this is the result we are hoping to predict. The result of the drive, simplified to any of these four categories: Touchdown (TD), Field Goal (FG), Turnover (TO), Non-Score (NON_SCORE). 
 
 
+## Use of the Model
 
 
 
