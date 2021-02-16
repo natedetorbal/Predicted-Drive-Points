@@ -1,17 +1,20 @@
 # Predicted-Drive-Points
 College Football Predicted Drive Points
+by Nate DeTorbal
+February, 2021
 
 
 ## Introduction
-In Sports, fans always try and justify their teams losses. They say things like "The other team got lucky", or "we lost the game, the other team didn't win it", or even "we really deserved to win that game." While luck is very hard to quantify, we can take a better look at what a team 'deserved' to output in a certain game. Predicting Drive Points is a way that we can look at a possession in football and say on average, this is what should have happened on this possession given how we performed on the given drive. For example, if an offensive possession starts on their own 25 yard-line and the offense manages to get down to the opposing teams 5 yard-line, you would expect them to most likely score a touchdown. However, on the next play, the team turns the ball over, resulting in zero points. You could say that the overall success of the drive 'deserved' to score some points, and on average do score. Predicted Drive Points attempts to account for the predicted points a team should score on a drive or in a game based on their total offensive performance.
+In Sports, fans always try and justify their teams losses. They say things like "The other team got lucky", or "we lost the game, the other team didn't win it", or even "we really deserved to win that game." While luck is very hard to quantify, we can take a better look at what a team 'deserved' to output in a certain game. Predicting Drive Points is a way that we can look at a possession in football and say on average, this is what should have happened on this possession given how we performed on the given drive. For example, if an offensive possession starts on their own 25 yard-line and the offense manages to get down to the opposing teams 5 yard-line, you would expect them to most likely score a touchdown. However, on the next play, the team turns the ball over, resulting in zero points. The overall success of the drive 'deserved' to score some points, and on average a drive with the same drive statistics do score points. In short, Predicted Drive Points is a descriptive metric that attempts to account for the predicted points a team should score on a drive based on their total offensive performance. You could say that Predicted Drive Points attempts to look at how a team scores on average, and takes out less likely and unusual plays. 
 
 
 ## Data Acquisition
 All data is acquired in the 'Get Data.ipynb' notebook. I downloaded and used the CFBD custom library for python to get the data. Here is a link to the library documentation: https://github.com/CFBD/cfbd-python
-The data used is play-by-play data for each play in college football. Data from the 2018 Season was used to initially train the model and data from the 2019 and 2020 seasons was used to validate and view results. More information on what statistics are pulled from the play-by-play data are found in the model variables below. 
+The data used is play-by-play data for each play in college football. Data from the 2018 Season was used to initially train the model. Data from the 2019 and 2020 seasons were used to validate and view results. More information on what statistics are pulled from the play-by-play data are found in the model variables below. 
 
 
 ## Model Variables
+#### Which statistics from a drive are used to find the Predicted Drive Points?
 **Start Period (start_period)
 :** The Quarter the drive starts
 **End Period (end_period)
