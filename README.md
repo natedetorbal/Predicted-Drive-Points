@@ -1,7 +1,7 @@
 # Predicted-Drive-Points
-College Football Predicted Drive Points
-by Nate DeTorbal
-February, 2021
+#### College Football Predicted Drive Points
+#### by Nate DeTorbal
+#### February, 2021
 
 
 ## Introduction
